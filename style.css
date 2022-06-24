@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #dcf1e3;
+}
+nav {
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    width: 100%;
+    background-color: #241adb9f;
+    font-size: 25px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+body {
+    background-color: #261ce8b6;
+}
+nav div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    justify-content: flex-start;
+    padding-left: 25px;
+}
+.nav-itens {
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav-itens a {
+    color: whitesmoke;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.nav-itens a:hover {
+    color: #00ff22;
+}
+.dropdownmenu {
+    display: none;
+    justify-content: flex-end;
+}
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    width: 100%;
+    background-color: rgba(206, 193, 218, 0.76);
+    background: url(./img/background-main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.textohome {
+    font-size: 40px;
+    background-color: #1a84dba1;
+}
+#sobremim {
+    height: 90vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(105, 14, 190, 0.336);
+}
+#sobremim div{
+    text-align: center;
+}
+.eumesmo {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.eumesmo img {
+    border: 3px solid #241ADB;
+    height: 80%;
+}
+.sobremimtexto {
+    margin-right: 10px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 25px;
+    padding-left: 10px;
+    padding-right: 25px;
+}
+.sobremimtexto h1 {
+    align-self: center;
+    margin-bottom: 10px;
+}
+.sobremimtexto p{
+    font-size: 25x;
+    text-align: justify;
+}
+#projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 50vh;
+    background-color: #241ADB;
+}
+#projetos h1{
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+.div-projetos {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+.item-projetos {
+    display: flex;
+    background-color: #00ee34ad;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    border-radius: 5%;
+    min-height: 200px;
+    width: 300px;
+}
+.item-projetos:hover{
+    background-color: #00ee34e1;
+}
+
+#competencias {
+    background-color: #00f5527e;
+    color: #241ADB;;
+    height: 80vh;
+    font-size: 40px;
+    text-align: center;
+}
+#competencias h1{
+    color: #241ADB;;
+}
+#competencias button {
+    background-color: #241ADB;
+    font-size: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 5%;
+    color: #fcfcfce1;
+}
+.card-comp {
+    font-size: 25px;
+    border-radius: 2%;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 65px;
+    width: 65%;
+    display: none;
+}
+.card-comp p {
+    color: #03003d;
+    text-align: justify;
+    letter-spacing: 2px;
+}
+.comp-active {
+    display: block;
+    visibility: visible;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background-color: #241adb9f;
+    height: 10vh;
+}
+
+@media (max-width: 900px) {
+    .dropdownmenu {
+        display: flex;
+        justify-content: flex-end;
+    }
+    nav .nav-itens {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 80vh;
+        height: 92vh;
+        background-color: rgb(98, 0, 255);
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        justify-content: space-evenly;
+        transition: transform 0.4s ease-in;
+    }
+    .logo h1{
+        font-size: 25px;
+    }
+    .nav-itens.menu-active{
+        transform: translateX(0);
+    }
+    #home {
+        height: 110vh;
+    }
+    .textohome {
+        font-size: 5vh;
+        text-align: center;
+    }
+    #sobremim {
+        height: 100vh;
+        padding-top: 10vh;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(105, 14, 190, 0.336);
+        padding-bottom: 10px;
+    }
+    #sobremim div{
+        text-align: center;
+    }
+    .eumesmo {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .eumesmo img {
+        border: 1px solid #241ADB;
+        height: 95%;
+    }
+    .sobremimtexto {
+        margin: auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        font-size: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .sobremimtexto h1 {
+        /* align-self: center;
+        margin-bottom: 10px; */
+    }
+    .sobremimtexto p{
+      font-size: 20px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid rgba(9, 255, 0, 0.651);
+    }
+    #projetos {
+        height: 100vh;
+    }
+    #projetos h1{
+        font-size: 60px;
+        margin-bottom: 30px;
+    }
+    .div-projetos {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .item-projetos {
+        display: flex;
+        background-color: #00ee34ad;
+        color: black;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        border-radius: 5%;
+        margin-bottom: 10px;
+        min-height: 100px;
+        width: 300px;
+    }    
+    #competencias {
+        height: 110vh;
+        padding-bottom: 10px;
+    }
+}

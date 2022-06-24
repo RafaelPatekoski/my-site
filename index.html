@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rafa Patekoski</title>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <h1>Rafa Patekoski</h1>
+        </div>
+        <div class="nav-itens" id="nav-list">
+            <a onclick="menuDrop()"  href="/">Home</a>
+            <a onclick="menuDrop()" href="#sobremim">Sobre Mim</a>
+            <a onclick="menuDrop()" href="#projetos">Projetos</a>
+            <a onclick="menuDrop()" href="#competencias">Competências</a>
+        </div>
+        <div class="dropdownmenu">
+            <img onclick="menuDrop()" src="./img/menu.png" alt="" srcset="">
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="textohome">
+            <h1>Olá meu nome é Rafael Patekoski</h1>
+        </div>
+        <div>
+
+        </div>
+    </section>
+    <section id="sobremim">
+        <div  class="eumesmo">
+            <img src="./img/eumesmo.jpg" alt="Eu Mesmo">
+        </div>
+        <div class="sobremimtexto">
+            <h1>Sobre Mim</h1>
+            <p>
+                Atualmente estou estudando e criando projetos em NodeJs utilizando bancos de dado como MongoDB e MySQL, já experimentei integração com ReactJs e VueJs para o front-end.
+            </p>
+            <p>
+                Busco minha primeira oportunidade para atuar na área da programação com foco em desenvolver soluções para o uso no mundo real.
+            </p>
+            <p>
+                Sou formado como técnico de informática em 2018, aprendi a lógica de programação e a base das linguagens PHP, C#, Java e Javascript.
+            </p>
+        </div>
+    </section>
+    <section id="projetos">
+        <h1>Projetos</h1>
+        <div class="div-projetos">
+            <div class="item-projetos">
+            EM BREVE...
+            </div>
+            <div class="item-projetos">
+                EM BREVE...
+            </div>
+            <div class="item-projetos">
+                EM BREVE...
+            </div>
+        </div>
+    </section>
+    <section id="competencias">
+        <h1>Competências</h1>
+        <div class="card-comp comp-active" id="comp-javascript">
+            <img src="./img/js.png" alt="">
+            <h2 id="comp-title-javascript">Javascript</h2>
+            <div id="comp-body-javascript">
+                <p>Tenho conhecimento em Javascript tanto no front-end quanto no back-end com NodeJs em um nivel intermediario.
+                </p>
+                <hr>
+                <p>
+                    JavaScript é uma linguagem de programação de alto nível criada, a princípio, para ser executada em navegadores e manipular comportamentos de páginas web.
+                </p>
+            </div>
+        </div>
+        <div class="card-comp" id="comp-html">
+            <img src="./img/html-5.png" alt="">
+            <h2 id="comp-title-html">HTML</h2>
+            <div id="comp-body-html">
+                <p>Com HTML eu posso fazer a base do seu site de um jeito que o google vai rankear muito bem defido ao meu conhecimento nas novas tags HTML 5</p>
+                <hr>
+                <p>Além disso eu conheço sobre os tipos de input como o de data, de arquivo, de cor entre outros perfeito para formularios.</p>
+            </div>
+        </div>
+        <div class="card-comp" id="comp-css">
+            <img src="./img/css-3.png" alt="">
+            <h2 id="comp-title-css">CSS</h2>
+            <div id="comp-body-css">
+                <p>Em CSS tenho conhecimento suficiente para estilzar um site e tornalo mais bonito, além de responsivo para aparelhos mobile.</p>
+            </div>
+        </div>
+        <button onclick="switchComp()">Proxima competência</button>
+    </section>
+    <footer>
+        <a style="color: rgb(250, 94, 180)" href="https://www.instagram.com/rafapatekoski/">Instagram</a> | <a style="color: rgb(79, 146, 233)" href="https://www.linkedin.com/in/rafaelpatekoski/">Linkedin</a> | <a style="color: rgb(255, 32, 32)"href="https://www.youtube.com/channel/UCq-qNoXJEQ3rGyPYkIPWb2A">Youtube</a>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
