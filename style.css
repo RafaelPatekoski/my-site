@@ -171,9 +171,6 @@ nav div {
     visibility: visible;
 }
 footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -284,7 +281,7 @@ footer {
         width: 300px;
     }    
     #competencias {
-        height: 110vh;
-        padding-bottom: 10px;
+        height: 130vh;
+        padding-bottom: 30px;
     }
 }
